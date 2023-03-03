@@ -1,0 +1,268 @@
+@font-face
+	font-family: 'Inter'
+	src: url('./fonts/Inter.var.woff2')
+	font-weight: normal
+	font-style: normal
+@font-face
+	font-family: 'Prata'
+	src: url('./fonts/Prata-Regular.ttf')
+	font-weight: normal
+	font-style: normal
+@font-face
+	font-family: 'Roboto Condensed'
+	src: url('./fonts/RobotoCondensed-Regular.ttf')
+	font-weight: normal
+	font-style: normal
+body
+	width: 1300px
+	margin: 0 auto!important
+	.header
+		display: flex
+		align-items: center
+		position: relative
+		font-size: 14px
+		margin-top: 24px
+		.location-section
+			margin-right: 61px
+		.phone-section
+			margin-right: 198px
+			.location, .phone
+				color: #303030
+				font-family: 'Inter'
+				font-style: normal
+				font-weight: 400
+				line-height: 100%
+				margin: 0 8px
+		.logo
+			padding: 0
+			width: 185px
+			display: flex
+			flex-direction: column
+			align-self: center
+			font-family: 'Prata'
+			font-size: 32px
+			margin-right: 229px
+			span span
+				color: #E1A661
+			.logo-description
+				font-family: 'Roboto Condensed'
+				font-weight: 300
+				font-size: 14px
+				letter-spacing: 0.27em
+				color: #919191
+		.icons-section
+			position: absolute
+			right: 0
+		.auth-section
+			button
+				border: none
+				background-color: inherit
+				padding: 0
+			span
+				margin: 0 10px
+		.icons-section
+			:first-child
+				margin-right: 28px
+			:last-child
+				margin-left: 28px
+			.fav-total
+				display: inline-block
+				width: 19px
+				height: 19px
+				background-color: #E46942
+				border-radius: 50%
+				position: absolute
+				top: -5px
+				left: 13px
+				padding: 2px 0 2px 3px
+				font-family: 'Inter'
+				font-weight: 700
+				font-size: 10px
+				color: #FFF
+	.nav
+		height: 62px
+		margin-top: 48px
+		background-color: #F8F8F8
+		margin-bottom: 20px
+		ul
+			margin: 0 0 0 50px
+			padding: 0
+			display: flex
+			align-items: center
+			list-style-type: none
+			font-family: 'Inter'
+			font-weight: 500
+			font-size: 13px
+			color: #303030
+			text-transform: uppercase
+			li
+				margin-right: 60px
+		ul :first-child
+			a
+				opacity: 0.5
+		ul :last-child
+			margin-right: 0
+			a
+				margin-right: 110px
+		.search
+			width: 303px
+			display: flex
+			align-items: center
+			border-left: 1px solid #F0F0F0
+			img
+				margin-left: 26px
+				margin-right: 15px
+			input
+				border: none
+				background-color: #F8F8F8
+				::placeholder
+					color: red
+					font-size: 14px
+	.slider
+		height: 560px
+		background-color: #F8F8F8
+		position: relative
+		margin-bottom: 120px
+		.slide
+			display: flex
+			align-items: center
+			justify-content: space-between
+			.diamond
+					position: absolute
+					top: 24px
+			.promotion
+				display: flex
+				flex-direction: column
+				margin-left: 126px
+				font-family: 'Prata'
+				font-weight: 400
+				z-index: 1
+				:first-child
+					font-size: 20px
+					margin-bottom: 30px
+				:first-child + span
+					text-transform: uppercase
+					font-size: 50px
+					margin-bottom: 54px
+				button
+					background-color: #303030
+					color: #fff
+					font-family: 'Inter'
+					font-weight: 500
+					font-size: 14px
+					line-height: 14px
+					text-transform: uppercase
+					border: none
+					width: 200px
+					height: 54px
+					padding: 20px 56px
+		.arrow-prev, .arrow-next
+			position: absolute
+			width: 54px
+			height: 54px
+			top: calc( 50% - 17px )
+		.arrow-prev
+			left: 24px
+		.arrow-next
+			right: 24px
+		.pagination
+			height: 8px
+			margin-left: calc( 50% - 4px )
+			position: absolute
+			bottom: 24px
+			input
+				position: absolute
+				z-index: -1
+			.custom-radio
+				display: inline-block
+				position: relative
+				width: 8px
+				height: 8px
+				background: #fff
+				border: 1px solid #303030
+				border-radius: 50%
+				margin-right: 8px
+			.custom-radio::before
+				content: ''
+				display: inline-block
+				width: 8px
+				height: 8px
+				background-color: #303030
+				border-radius: 50%
+				position: absolute
+				left: -1px
+				top: -1px
+				display: none
+			input:checked + .custom-radio::before
+				display: block
+	h1
+		font-family: 'Prata'
+		font-size: 40px
+		font-weight: 400
+		line-height: 40px
+		color: #303030
+	.popular
+		margin-top: 40px
+		margin-bottom: 120px
+		display: flex
+		gap: 20px
+		article
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 200px
+			height: 259px
+			background-color: #F8F8F8
+			.img-wrapper
+				display: flex
+				height: 100%
+				img
+					align-self: center
+			span
+				display: inline-block
+				height: 50px
+				max-width: 150px
+				font-family: 'Inter'
+				font-weight: 400
+				text-align: center
+				line-height: 16px
+
+	.tags
+		margin-top: 24px 
+		margin-bottom: 36px
+		display: flex
+		gap: 10px
+		button
+			background-color: #F0F0F0
+			border: none
+			border-radius: 21px
+			font-family: 'Inter'
+			padding: 13px 30px 13px 30px
+			color: #303030
+		.isActive
+			background-color: #303030
+			color: #fff
+	.sale
+		display: flex
+		gap: 20px
+		article
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			width: 310px
+			height: 370px
+			border: 1px solid #F0F0F0
+			font-family: 'Inter'
+			.price-story
+				display: flex
+				.total-price
+					font-size: 18px
+					font-weight: 600
+					line-height: 18px
+					color: #303030
+				.initial-price
+				.discount
+			.rubl::after
+				content: "\20BD"
+			
